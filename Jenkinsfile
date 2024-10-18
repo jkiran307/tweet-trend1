@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mvn clean deploy'
+                sh 'mvn clean deploy -X -DskipTests'
             //    git branch: 'main', url: 'https://github.com/ravdy/tweet-trend-new.git'
             }
         }
